@@ -54,3 +54,34 @@ function get_titulo() {
 	}
 }
 
+/* Criando a taxonomia de localização */
+
+function criando_taxonomia_localizacao() {
+	$singular = 'Localização';
+	$plural = 'Localizações';
+
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'view_item' => 'Ver ' . $singular,
+		'edit_item' => 'Editar ' . $singular,
+		'new_item' => 'Novo ' . $singular,
+		'add_new_item' => 'Adicionar novo ' . $singular
+		);
+
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'hierarchical' => true
+		);
+
+	register_taxonomy('localizacao', 'imovel', $args);
+}
+
+add_action( 'init' , 'criando_taxonomia_localizacao' );
+
+function is_selected_taxonomy($taxonomy, $search) {
+	if($taxonomy->slug === $search) {
+		echo 'selected';
+	}
+}
