@@ -1,0 +1,47 @@
+.single-imovel {
+	margin-bottom: 2rem;
+}
+
+.single-imovel-thumbnail img {
+	width: 100%;
+	max-height: 500px;
+}
+
+.single-imovel p {
+	font-size: 1rem;
+	line-height: 2;
+}
+
+.single-imovel-data {
+	display: block;
+	font-size: 1.1rem;
+	color: #888;
+	margin-top: 1rem;
+	font-style: italic;
+}
+
+.single-imovel-geral {
+	display: flex;
+}
+
+.single-imovel-descricao {
+	flex-basis: 80%;
+}
+
+.single-imovel-informacoes {
+	flex-basis: 20%;
+	margin-left: 5%;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+.single-imovel-informacoes dt {
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-bottom: .8rem;
+}
+
+.single-imovel-informacoes dt:not(:first-child) {
+	margin-top: .8rem;
+}

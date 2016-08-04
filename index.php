@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+$css_escolhido = 'index';
+require_once('header.php');
+?>
 <main class="home-main">
 	<div class="container">
 

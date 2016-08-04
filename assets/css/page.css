@@ -1,0 +1,82 @@
+.pagina-main {
+	background-color: #F4F4F4;
+	height: 100%;
+}
+
+.pagina {
+	background-color: #FFF;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 1.5rem;
+
+	line-height: 1.7;
+	font-size: 1rem;
+}
+
+.pagina-titulo {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #000;
+}
+
+.pagina-conteudo {
+	margin-bottom: 1rem;
+}
+
+.pagina-thumbnail img {
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.contato-subtitulo {
+	font-size: .9rem;
+}
+
+.form-nome,
+.form-email,
+.form-mensagem {
+	margin: 1rem 0;
+}
+
+.form-nome input,
+.form-email input {
+	width: 100%;
+	display: block;
+	font-size: 1rem;
+	padding: .5rem;
+	border-radius: 8px;
+	border: 1px solid #949494;
+	box-sizing: border-box;
+}
+
+.form-mensagem textarea {
+	width: 100%;
+	height: 200px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	border: 1px solid #949494;
+}
+
+.form-nome label,
+.form-email label,
+.form-mensagem label {
+	display: block;
+	font-weight: 700;
+	font-size: 1.1rem;
+	margin-bottom: .5rem;
+}
+
+.email-fracasso,
+.email-sucesso {
+	display: block;
+	color: #FFF;
+	padding: .5rem;
+}
+
+.email-sucesso {
+	background-color: green;
+}
+
+.email-fracasso {
+	background-color: red;
+}

@@ -1,0 +1,44 @@
+header .container,
+#menu-menu-principal {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+header {
+	background-color: #555;
+}
+
+.menu li:not(:first-child) {
+	margin-left: 3rem;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #FFF;
+	letter-spacing: .05rem;
+	font-weight: 300;
+}
+
+.menu li:hover a,
+.menu .current-menu-item a {
+	font-weight: 700;
+}
+
+header .container {
+	justify-content: center;
+	padding: .5rem 0;
+}
+
+.menu-item-type-custom a {
+	height: 80px;
+	width: 150px;
+	text-indent: -9999px;
+	display: block;
+}
+
+.menu-item-type-custom {
+	background-image: url(../imagens/header-logo.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
