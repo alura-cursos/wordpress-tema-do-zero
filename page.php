@@ -1,6 +1,22 @@
 <?php
 $css_escolhido = 'page';
 require_once('header.php');
+
+$nome = $_POST['form-nome'];
+$email = $_POST['form-email'];
+$mensagem = $_POST['form-mensagem'];
+
+$formularioEnviado = isset($nome) && isset($email) && isset($mensagem);
+
+if($formularioEnviado) {
+	$enviou = enviar_e_checar_email($nome, $email, $mensagem);
+
+	if($enviou) { ?>
+		<span class="email-sucesso">Seu e-mail foi enviado com sucesso!</span>
+	<?php } else { ?>
+		<span class="email-fracasso">Desculpe, ocorreu um erro, seu e-mail não foi enviado!</span>
+	<?php } 
+}
 ?>
 
 <main class="pagina-main">
@@ -24,7 +40,7 @@ require_once('header.php');
 		if( is_page('contato') ) {
 		?>
 
-		<form>
+		<form method="post">
 			<div class="form-nome">
 				<label for="form-nome">Nome:</label>
 				<input id="form-nome" type="text" placeholder="Seu nome aqui" name="form-nome">
